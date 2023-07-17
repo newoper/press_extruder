@@ -1,5 +1,6 @@
 # press_extruder
 Upload GitHub #2
+
 Программа для расчета расходно-напорных характеристик пресс-экструдера
 Свидетельство о регистрации программы ЭВМ № 2023616255
 
@@ -15,5 +16,7 @@ Upload GitHub #2
 
 Ссылки на статьи по теме:
 https://www.elibrary.ru/item.asp?id=52140123
+
 https://cyberleninka.ru/article/n/matematicheskaya-model-toka-v-kanale-shneka-na-osnove-uravneniy-navie-stoksa/viewer
+
 https://cyberleninka.ru/article/n/postroenie-3d-modeli-shneka-ekstrudera-na-osnove-uravneniy-navie-stoksa/viewer
