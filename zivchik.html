@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333333;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container body-content">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#first-tab-content" data-toggle="tab">Расчет расходно-напорных характеристик экструдера</a></li>
+            <!-- <li><a href="#second-tab-content" data-toggle="tab">Вторая ссылка</a></li>
+            <li><a href="#second-tab-content" data-toggle="tab">Третья ссылка</a></li>
+            <li><a href="#fourth-tab-content" data-toggle="tab">Четвертая ссылка</a></li>
+            <li><a href="#fifth-tab-content" data-toggle="tab">Пятая ссылка</a></li> -->
+        </ul>
+
+        <div class="tab-content">
+            <div id="first-tab-content" class="tab-pane fade in active">
+                <h3>Расчет расходно-напорных характеристик экструдера</h3>
+                <div class="col-md-12">
+                    <p>
+
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="B"><i>B (м)</i> </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="B" value="0.017">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="H"><i>H (м)</i> </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="H" value="0.0137">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="muy"><i>μ·10<sup>6</sup>(Па·с)</i> </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="muy" value="1.03">
+                        </div>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label class="control-label col-xs-2" for="h_1"><i>h<sub>1</sub></i> </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="h_1" value="1">
+                        </div>
+                    </div> -->
+                    <!-- <div class="form-group">
+                        <label class="control-label col-xs-2" for="h_2"><i>h<sub>2</sub></i> </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="h_2" value="1">
+                        </div>
+                    </div> -->
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="S"><i>S (м)</i> </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="S" value="0.013">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="w"><i>ω (рад/с)</i> </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="w" value="1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="fi_h"><i>φ°</i> </label>
+                        <div class="col-xs-2">
+                            <input type="text" class="form-control float" id="fi_h" value="19">
+                        </div>
+                        <label class="control-label col-xs-2" for="fi_m"><i>φ'</i> </label>
+                        <div class="col-xs-2">
+                            <input type="text" class="form-control float" id="fi_m" value="27">
+                        </div>
+                        <label class="control-label col-xs-2" for="fi_s"><i>φ"</i> </label>
+                        <div class="col-xs-2">
+                            <input type="text" class="form-control float" id="fi_s" value="44">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="k_f"><i>k<sub>ф</sub></i> </label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="k_f" value="1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="L_1"><i>L<sub>1</sub>(м)</i></label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="L_1" value="0.028">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="R"><i>R (м)</i></label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="R" value="0.009">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="r"><i>r (м)</i></label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="r" value="0.003">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-2" for="D_k"><i>D<sub>k</sub> (м)</i></label>
+                        <div class="col-xs-10">
+                            <input type="text" class="form-control float" id="D_k" value="0.088">
+                        </div>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-default" id="btn-calculate">Рассчитать</button>
+                    </p>
+                </div>
+
+            </div>
+            <div id="second-tab-content" class="tab-pane fade">
+                <h3>Коническое отверстие</h3>
+                <p>
+                    Определение расходно-напорной характеристику формующей и нагнетающей части;
+                    Вычислить перепада давления, создаваемого экструдером и его производительность.
+                </p>
+            </div>
+            <div id="third-tab-content" class="tab-pane fade">
+                <h3>Суживающие/расширяющее отверстие</h3>
+                <p>
+                    Определение расходно-напорной характеристику формующей и нагнетающей части;
+                    Вычислить перепада давления, создаваемого экструдером и его производительность.
+                </p>
+            </div>
+            <div id="fourth-tab-content" class="tab-pane fade">
+                <h3>Постоянного сечения</h3>
+                <p>
+                    Определение расходно-напорной характеристику формующей и нагнетающей части;
+                    Вычислить перепада давления, создаваемого экструдером и его производительность.
+                </p>
+            </div>
+            <div id="fifth-tab-content" class="tab-pane fade">
+                <h3>Произвольной формы</h3>
+                <p>
+                    Определение расходно-напорной характеристику формующей и нагнетающей части;
+                    Вычислить перепада давления, создаваемого экструдером и его производительность.
+                </p>
+            </div>
+        </div>
+
+        <div class="result-block">
+            <b>Результат: </b>
+            <div id="result">
+
+            </div>
+        </div>
+    </div>
+    <script src="libs/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('input.float').on('input', function() {
+                this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');
+            });
+            $('#btn-calculate').on('click', function () {
+                let k_0 = 1
+                    , muy = $('#muy').val() * 10**6
+                    , w = $('#w').val()
+
+                    //Формула для перевода из десятичной дроби: a°b'c" = (a + b/60 + c/3600)°
+                    //Где: a - градусы, b - минуты, c - секунды.
+                    , fi = Number($('#fi_h').val())+ (Number($('#fi_m').val())/60) + (Number($('#fi_s').val())/3600)
+                    
+                    , B = $('#B').val()
+                    , H = $('#H').val()
+                    , R = $('#R').val()
+                    , r = $('#r').val()
+                    , L_1 = $('#L_1').val()
+                    , h_1 = $('#h_1').val()
+                    , h_2 = $('#h_2').val()
+                    , gamma = $('#gamma').val()
+                    , S = $('#S').val()
+                    , D_k = $('#D_k').val();
+                let arr = extruder(
+                    k_0
+                    , muy
+                    , w
+                    , fi
+                    , B
+                    , H
+                    , R
+                    , r
+                    , L_1
+                    , h_1
+                    , h_2
+                    , gamma
+                    , S
+                    , D_k
+                );
+                let resultString = '';
+
+                // for (let item in arr) {
+                //     if (typeof arr[item] !== 'function') {
+                //         resultString += item + ' = ' + arr[item];
+                //     }
+                //     resultString += '<br>';
+                // }
+                let strings = `
+                    <br>
+                    <b><i>Рассходно-напорная характеристика формирующей части</i></b> <br>
+                    <b><i>Q<sub>ф</sub></i></b> = ${arr.Q_f} (м<sup>3</sup>/с)<br>
+                    <br>
+                    <b><i>Производительность экструдера</i></b> <br>
+                    <b><i>Q<sub>э</sub></i></b> = ${arr.Q_e} (м<sup>3</sup>/с)<br>
+                    <br>
+                    <b><i>Рассходно-напорная характеристика нагнетающей части</i></b> <br>
+                    <b><i>Q<sub>H</sub></i></b> = ${arr.Q_H} (м<sup>3</sup>/с)<br>
+                    <br>
+                    <b><i>Скорость продукта вдоль винтового канала</i></b> <br>
+                    <b><i>v<sub>Z</sub></i></b> = ${arr.V_z} (м/с)<br>
+                    <br>
+                    <b><i>Рассходно-напорная характеристика нагнетающей части</i></b> <br>
+                    <b><i>Δp</i></b> = ${arr.delta_p} (Па)<br>
+
+                `;
+                $('#result').html(strings);
+            });
+        });
+        function extruder(k_0, muy, w, fi, B, H, R, r, L_1, h_1, h_2, gamma, S, D_k) {
+            let h = R - r; // шири¬на кольцевого зазора
+            let D = 2 * R - h; //(11.713) средний диаметр кольцевого отверстия
+            let kf_ring, k_f, kf_conical, kf_taper_expand, kf_random_section, kf_ne_ebu;
+            switch (k_0) {
+                case 1:
+                    kf_ring = ((Math.PI * D + h) * h ** 3) / (12 * L_1);  //(11.713) коэффициент геометрии формующего органа(матрицы), м3
+                    k_f = kf_ring;
+                    break;
+                case 2:
+                    kf_conical = (3 * Math.PI * ((R ** 3) * (r ** 3) * (R - r)) / (8 * L_1 * ((R ** 3) - (r ** 3)))); //(11.714) Для конического отверстия
+                    k_f = kf_conical;
+                    break;
+                case 3:
+                    kf_taper_expand = (B * (h_1 ** 2) * (h_2 ** 2) * Math.tan(gamma)); //(11.715) Для суживающегося или расширяющегося мелкого(щелевого) канала kф, м3
+                    k_f = kf_taper_expand;
+                    break;
+                case 4:
+                    kf_random_section = F / (2 * L * P); //(11.716) Для канала произвольного постоянного по длине сечения
+                    k_f = kf_random_section;
+                    break;
+                case 5:
+                    kf_ne_ebu = (f * B * H ** 3) / 12 * L; //(11.717) Скорость продукта вдоль винтового канала vz, м / с
+                    k_f = kf_ne_ebu;
+                    break;
+            }
+            // длина шнекового канала
+            let L_2 = Math.sqrt(((S) ** 2) + (Math.PI * (D_k - H)) ** 2) //(11.722)
+
+            // kHl и kH2 - коэффициенты геометрии шнекового нагнетателя, м3
+            k_H1 = Math.PI * D_k * ((B * H) / 2) * cos(fi) //(11.720)
+            k_H2 = (1 / 12) * ((B * Math.pow(H,3)) / (L_2)) //(11.721)
+            // Перепад давления, создаваемый экструдером, Δр, Па
+            delta_p = ((k_H1) / (k_H2 + k_f)) * muy * w //(11.723)
+            Q_f = (k_f / muy) * delta_p //(11.712) Расходно - напорная характеристика формующей части(го¬ловки) Qф, м3 / с
+
+
+            V_z = delta_p * (R ** 2 - r ** 2) / (4 * muy * L_2) //(11.718)
+            Q_H = k_H1 * w - k_H2 * delta_p / muy //(11.719) Расходно - напорная характеристика нагнетающей части, м3 / с
+            // Производительность экструдера QЭ, м3 / с,
+            Q_e = ((k_H1 * k_f) / (k_H2 + k_f)) * w //(11.724)
+            return { Q_e, Q_H, Q_f, V_z, delta_p };
+        }
+        function sin(degrees) {
+            var radians = (Math.PI / 180) * degrees;
+            return Math.sin(radians);
+        }
+        function cos(deg) {
+            var rad = (Math.PI / 180) * deg;
+
+            return Math.cos(rad).toFixed(6);
+        }
+    </script>
+</body>
+
+</html>
