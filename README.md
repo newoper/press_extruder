@@ -15,6 +15,7 @@ Upload GitHub #2
 - расходно-напорную характеристику нагнетающей части (Па) и др. показатели.
 
 Ссылки на статьи по теме:
+
 https://www.elibrary.ru/item.asp?id=52140123
 
 https://cyberleninka.ru/article/n/matematicheskaya-model-toka-v-kanale-shneka-na-osnove-uravneniy-navie-stoksa/viewer
